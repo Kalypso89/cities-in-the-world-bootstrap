@@ -1,2 +1,11 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.navbar-nav .nav-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: ' - ';
+}
