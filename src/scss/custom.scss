@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+$font-family-base: 'Roboto', sans-serif;
+
+$white: #ffffff;
+
+$theme-colors: (
+    "light":      #c4c4c4,
+    "dark":       #000000,
+    "primary":    #1b4b8e,
+    "secondary":  #5a5a5a,
+    "info":       #f54e4e,
+    "success":    #199b5a,
+    "warning":    #e0c91a,
+    "danger":     #ed190c,
+);
+
+.navbar-nav .nav-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: ' - ';
+}
+
